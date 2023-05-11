@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #ef8d36;
+    box-sizing: border-box;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .container h1 {
+    color: #ef8d36;
+    font-family: 'lobster', Cursive;
+    font-size: 3rem;
+    line-height: 1.9;
+    text-align: center;
+  }
+  
+  .single-pricing {
+    background: rgb(236, 235, 235);
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, .09);
+    padding: 40px 20px;
+    position: relative;
+    transition: 0.3s;
+    z-index: 2;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .single-pricing {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .single-pricing:hover {
+    box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.1);
+    transform: translate(0, -10px);
+    z-index: 100;
+  }
+  
+  .price-label {
+    background: #fcd770;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: -20px;
+    position: absolute;
+    width: 100px;
+  }
+  
+  .price-head h2 {
+    color: #fcd770;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+  }
+  
+  .price-head span {
+    background: #fcd770;
+    border-radius: 30px;
+    display: inline-block;
+    height: 6px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 6px;
+  }
+  
+  .price {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  
+  .single-pricing a {
+    background: none;
+    border: 2px solid #fcd770;
+    border-radius: 5000px;
+    color: #ef8d36;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 45px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .single-pricing a:hover {
+    background: #fcd770;
+  }
+  
+  .pricing-content {
+    margin-left: 400px;
+  }
+  
